@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <img
+        alt="An image of a Ruby Cube"
+        src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg"/>
+    </section>
+    <section>
+        <h2>Payment Information</h2>
+        <form>
+            <fieldset>
+                <legend>Enter your payment details</legend>
+                <label for="card-name">Cardholder Name:</label>
+                <input
+                type="text"
+                id="card-name"
+                name="card-name"
+                autocomplete="cc-name"
+                required/>
+                <label for="card-number">Card Number:</label>
+                <input
+                type="text"
+                id="card-number"
+                name="card-number"
+                autocomplete="cc-number"
+                required/>
+                <label for="exp-date">Exp. Date:</label>
+                <input
+                type="text"
+                placeholder="MM/YY"
+                id="exp-date"
+                name="exp-date"
+                required
+                aria-required="true"/>
+                <label for="cvv">CVV:</label>
+                <input
+                type="number"
+                id="cvv"
+                name="cvv"
+                required
+                aria-required="true"/>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
