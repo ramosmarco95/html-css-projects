@@ -12,6 +12,8 @@ permissions:
 
 jobs:
   deploy:
+    environment:
+      name: github-pages    # REQUIRED for Pages deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
