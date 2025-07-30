@@ -1,5 +1,5 @@
 body {
-  background-image: url("pexels-igor-haritanovich-coffe-bns.jpg");
+  background-image: url("coffee-bns-valeria-aksakova.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,9 +26,8 @@ h1, h2, p {
 }
 
 .menu {
-  width: 80%;
   background-color: burlywood;
-  margin-left: auto;
+  margin-left: 15%;
   margin-right: auto;
   padding: 20px;
   max-width: 500px;
