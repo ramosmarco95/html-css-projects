@@ -52,7 +52,18 @@ hr {
 h1, h2 {
   font-family: Impact, serif;
 }
-
+.home-button {
+  display: inline-block;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin: 1rem;
+  transition: background-color 0.3s;
+}
 .item p {
   display: inline-block;
   margin-top: 5px;
