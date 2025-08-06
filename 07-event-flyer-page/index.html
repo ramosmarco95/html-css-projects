@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Flyer</title>
+    <meta name="description" content="You're invited to Marco's Birthday Party! Cupcakes, games, and great vibes await. RSVP now!">
+    <link rel="stylesheet" href="main.css">
+    <meta property="og:title" content="Marco's Birthday Party">
+    <meta property="og:description" content="You're invited! Cupcakes, games, and great vibes await. RSVP today!">
+    <meta property="og:image" content="cupcake-freepik.jpg">
+    <meta property="og:type" content="event">
+</head>
+<body>
+    <a class="home-button" href="https://ramosmarco95.github.io/html-css-projects/">Home</a>
+    <div class="event-flyer">
+        <header>
+        <figure>
+            <img src="cupcake-freepik.jpg" alt="Event Flyer" class="flyer-image">
+            <figcaption>Join us for an exciting event!</figcaption>
+        </figure>
+        <h1>Marco's Birthday Party</h1>
+        </header>
+        <hr>
+        <main>
+            <article>
+                <section class="event-details">
+                    <h2>Event Details</h2>
+                    <p>Date: <time datetime="2025-10-18 16:00">Wednesday, October 18, 2025</time></p>
+                    <p>Time: <time>4:00 PM</time> - <time>6:00 PM</time></p>
+                    <p>Location: <address lang="en">123 Celebration Lane, Party City</address></p>
+                    <p><Details>Come enjoy deleciuos Mexican food and Mariachi band </Details></p>
+                </section>
+
+                <section class="rsvp">
+                    <h2 id="rsvp-heading">RSVP</h2>
+                    <p>Please let us know if you can make it!</p>
+                    <fieldset>
+                        <legend>RSVP Form</legend>
+                            <form action="#" method="post" aria-labelledby="rsvp-heading">
+                                <label for="name">Your Name:</label>
+                                <input type="text" id="name" name="name" required>
+                                
+                                <label for="email">Your Email:</label>
+                                <input type="email" id="email" name="email" required>
+
+                                <button type="submit">Submit RSVP</button>
+                            </form>
+                    </fieldset>            
+                </section>
+            </article>
+        </main>
+        <hr>
+        <footer>
+            <p>&copy; 2025 Marco's Birthday Bash. All rights reserved.</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
