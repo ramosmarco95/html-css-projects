@@ -1,0 +1,93 @@
+body {
+    background-image: url("birthday-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 50px 0;
+    min-height: calc(100vh - 50px);
+    color: #fff;
+}
+.event-flyer {
+    
+    max-width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+/* header */
+header {
+    text-align: center;
+    padding: 20px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+.flyer-image {
+    width: calc(100% / 2);
+    height: auto;
+    display: inline-block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+ /* main */
+main {
+    padding: 20px;
+    max-width:100%;
+    margin: 0 auto;    
+}
+.event-details, .rsvp {
+    width: 50%;
+    padding: 10px;
+}
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+}
+button {
+    margin: 5px 0;
+    padding: 5px;
+}
+ /* footer */
+footer {
+    padding: 20px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+.home-button {
+  display: inline-block;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin: 1rem;
+  transition: background-color 0.3s;
+}
+@media (max-width: 768px) {
+    .event-flyer {
+        max-width: 90%;
+        margin: 0 0;
+    }
+    header, main, footer {
+        max-width: 90%;
+    }
+    .flyer-image {
+        width: 100%;
+    }
+    article {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .event-details, .rsvp {
+        width: 100%;
+    }
+}
