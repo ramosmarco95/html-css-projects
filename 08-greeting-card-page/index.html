@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Card</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+     <a class="home-button" href="https://ramosmarco95.github.io/html-css-projects/">Home</a>
+    <div class="card" id="greeting-card">
+        <header>
+            <h1>Happy Birthday, Marco!</h1>
+        </header>
+        <main>            
+            <p class="message">Wishing you a day filled with love, joy, and all your favorite things. May this year bring you closer to your dreams!</p>
+            <p class="message">With love,</p>
+            <p class="message">Your Friends</p>
+            <div class="card-links">
+                <a href="#send" class="send-link">Send Card</a>
+                <a href="#share" class="share-link">Share on Social Media</a>
+            </div>
+        </main>       
+    </div>
+    <section id="send">
+        <h2>Sending your card...</h2>
+        <p>Card successfully sent to your recipient!</p>
+    </section>
+
+    <section id="share">
+        <h2>Sharing your card...</h2>
+        <p>Your card was shared on social media!</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Greeting Card Co. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll("section");
+
+        // Listen for URL hash changes
+        window.addEventListener("hashchange", function () {
+            const hash = window.location.hash;
+            if (hash) {
+            const targetSection = document.querySelector(hash);
+            if (targetSection) {
+                // Hide all sections
+                sections.forEach(sec => sec.style.display = "none");
+
+                // Show the target section
+                targetSection.style.display = "block";
+
+                // Hide it after 3 seconds
+                setTimeout(() => {
+                targetSection.style.display = "none";
+                history.replaceState(null, null, " "); // remove hash from URL
+                }, 3000);
+            }
+            }
+        });
+        });
+    </script>
+
+</body>
+</html>
