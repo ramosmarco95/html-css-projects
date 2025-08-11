@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job App Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <a class="home-button" href="https://ramosmarco95.github.io/html-css-projects/">Home</a>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="marco-logo-no-bg.png" alt="Logo">
+            </div>
+            <div class="title">
+                <h1>Welcome to CodeShield</h1>
+                <p>Apply for your dream job today!</p>
+            </div>
+        </header>
+        <main>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="000 000-0000" required>
+                </div>
+                <div class="form-group">
+                    <label for="position">Position Applied For:</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select a position</option>
+                        <option value="developer">Developer</option>
+                        <option value="designer">Designer</option>
+                        <option value="manager">Manager</option>
+                        <option value="analyst">Analyst</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Availability:</legend>
+                        <label><input type="radio" name="availability" value="full-time" required> Full-Time</label>
+                        <label><input type="radio" name="availability" value="part-time"> Part-Time</label>
+                        <label><input type="radio" name="availability" value="contract"> Contract</label>
+                        <label><input type="radio" name="availability" value="internship"> Internship</label>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Skills:</legend>
+                        <label><input type="checkbox" name="skills" value="html"> HTML</label>
+                        <label><input type="checkbox" name="skills" value="css"> CSS</label>
+                        <label><input type="checkbox" name="skills" value="javascript"> JavaScript</label>
+                        <label><input type="checkbox" name="skills" value="python"> Python</label>
+                        <label><input type="checkbox" name="skills" value="java"> Java</label>
+                        <label><input type="checkbox" name="skills" value="other"> Other</label>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label for="resume">Upload Resume:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="cover-letter">Cover Letter:</label>
+                    <textarea id="cover-letter" name="cover-letter" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit Application</button>
+                </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 CodeShield. All rights reserved.</p>
+        </footer>
+    </div>    
+</body>
+</html>
