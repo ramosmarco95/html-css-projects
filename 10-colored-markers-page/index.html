@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Markers</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="home-button" href="https://ramosmarco95.github.io/html-css-projects/">Home</a>
+        </nav>
+        <h1>Colored Markers</h1>
+        <p>Explore the vibrant world of colored markers!</p>
+    </header>
+    
+    <main>
+        <article aria-labelledby="color-demo-heading">
+            <h2 id="color-demo-heading">Color Formats Demo</h2>
+
+            <p>
+                This HTML and CSS project demonstrates different ways to define and apply colors using named colors,
+                HEX values, RGB, RGBA, HSL, and HSLA. It renders a set of colored markers (red, green, blue) with
+                caps, sleeves, and gradients. We use <code>linear-gradient()</code> for smooth transitions and
+                <code>box-shadow</code> with alpha for depth. Transparency is shown via RGBA and HSLA to control
+                opacity independently of hue, saturation, and lightness.
+            </p>
+
+            <h3 id="css-examples">CSS Examples</h3>
+            <dl>
+                <dt>HEX</dt>
+                <dd><code>#55680D</code></dd>
+
+                <dt>RGB</dt>
+                <dd><code>rgb(255, 255, 255)</code></dd>
+
+                <dt>RGBA</dt>
+                <dd><code>rgba(255, 255, 255, 0.5)</code></dd>
+
+                <dt>HSL</dt>
+                <dd><code>hsl(223, 90%, 60%)</code></dd>
+
+                <dt>HSLA</dt>
+                <dd><code>hsla(223, 59%, 31%, 0.8)</code></dd>
+
+                <dt>Gradients</dt>
+                <dd><code>linear-gradient()</code> to blend multiple stops (e.g., red → magenta → deep red)</dd>
+
+                <dt>Shadows with Alpha</dt>
+                <dd><code>box-shadow</code> using semi-transparent colors (e.g., <code>#3B7E20CC</code> or <code>rgba(...)</code>)</dd>
+            </dl>
+        </article>
+
+        <div class="container">
+            <div class="marker red">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <div class="marker green">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <div class="marker blue">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Colored Markers</p>
+    </footer>
+</body>
+</html>
