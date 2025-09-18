@@ -1,0 +1,89 @@
+/* Created by: Marco Ramos — Updated: 2025-09-17 */
+
+/* ------ Base / Theme ------ */
+:root{
+  --bg: #b8b894;
+  --ink: #1f2937;
+  --border: #000;
+  --radius: 10px;
+  --gap: 1rem;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { font-size: 16px; }
+
+body.body-gradient {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.main-gradient {
+  width: min(1100px, 92vw);
+  margin-inline: auto;
+  padding: 1.5rem;
+}
+
+.heading-gradient {
+  text-align: center;
+  margin: 0 0 1.25rem;
+}
+
+.subhead {
+  margin: .25rem 0 0;
+  opacity: .85;
+  font-size: .95rem;
+}
+
+/* ------ Layout ------ */
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--gap);
+}
+
+/* Reusable card */
+.swatch {
+  margin: 0;
+}
+
+.swatch-box {
+  height: 5.5em;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: .5rem;
+  /* optional subtle depth */
+  box-shadow: 0 1px 6px rgba(0,0,0,.12);
+}
+
+figcaption {
+  font-size: .95rem;
+}
+
+/* ------ Gradient Samples ------ */
+#gradient1 {
+  background: linear-gradient(to right, rgb(0, 0, 102), rgb(153, 255, 153) 25%);
+}
+#gradient2 {
+  background: linear-gradient(to left, rgb(0, 0, 102), rgb(153, 255, 153) 10%);
+}
+#gradient3 {
+  background: radial-gradient(rgb(0, 102, 153), rgb(0, 204, 0), rgb(255, 0, 0));
+}
+#gradient4 {
+  background: repeating-radial-gradient(rgb(0, 102, 153), rgb(0, 204, 0) 10%, rgb(255, 0, 0) 15%);
+}
+#gradient5 {
+  background: linear-gradient(to top left, rgb(255, 255, 0), rgb(255, 102, 0), rgb(0, 102, 153), rgb(51, 51, 255));
+}
+
+/* ------ Optional: dark mode polish ------ */
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #e5e7eb; --bg: #2e2e2e; --border: #111; }
+  .swatch-box { box-shadow: 0 1px 10px rgba(0,0,0,.35); }
+}
